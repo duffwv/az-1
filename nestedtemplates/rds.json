@@ -92,7 +92,7 @@
     "uniqueStorageAccountContainerName": "[toLower(concat('sac', resourceGroup().name))]",
     "imagePublisher": "MicrosoftWindowsServer",
     "imageOffer": "WindowsServer",
-    "dnsServerPrivateIp": "10.0.0.4",
+    "dnsServerPrivateIp": "10.0.1.4",
     "subnet-id": "[concat(resourceId('Microsoft.Network/virtualNetworks',parameters('adVnetName')),'/subnets/',parameters('adSubnetName'))]",
     "publicIpRef": "publicIp",
     "brokerIpRef": "brokerpublicIp",

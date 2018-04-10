@@ -251,6 +251,33 @@
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
+                    "dnsLabelPrefix": {
+                        "value": "[parameters('dnsPrefix')]"
+                    },
+                    "adDomainName": {
+                        "value": "[parameters('domainName')]"
+                    },
+                    "adVnetName": {
+                        "value": "[variables('vnetName')]"
+                    },
+                    "adSubnetName": {
+                        "value": "[variables('subnetName')]"
+                    },
+                    "adminUsername": {
+                        "value": "[parameters('adminUsername')]"
+                    },
+                    "adminPassword": {
+                        "value": "[parameters('adminPassword')]"
+                    },
+                    "imageSKU": {
+                        "value": "[variables('imageSku')]"
+                    },
+                    "numberOfRdshInstances": {
+                        "value": "[parameters('numberOfRdshInstances')]"
+                    },
+                    "rdshVmSize": {
+                        "value": "[variables('vmsize')]"
+                    }
                 }
             }
         }
